@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>AnimationExtension</name>
+  <id>org.inkscape.katkitty.animate</id>
+  
+  <param name="begin_str" type="string" gui-text="begin_str:">0</param>
+  <param name="repeat_str" type="string" gui-text="repeat_str:">indefinite</param>
+  <param name="dur_str" type="string" gui-text="dur_str:">9.1</param>  
+  <param name="wrap" type="bool" gui-text="wrap_to_start_frame">true</param>
+      
+
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="katkitty"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">AnimationExtension.py</command>
+  </script>
+</inkscape-extension>
